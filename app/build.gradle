@@ -4,7 +4,6 @@ plugins {
 
 }
 apply plugin: 'kotlin-android-extensions'
-apply plugin: 'kotlin-kapt'
 //kotlin kapt and navigation safeargs plugin
 apply plugin: 'kotlin-kapt'
 
@@ -39,6 +38,9 @@ android {
     }
     buildFeatures {
         viewBinding true
+    }
+    dataBinding{
+        enabled=true
     }
 }
 
